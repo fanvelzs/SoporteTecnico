@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="580.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.soportetecnico.MenuController">
+    <center>
+        <VBox alignment="CENTER" maxWidth="430.0" spacing="18.0">
+            <padding><Insets bottom="48.0" left="48.0" right="48.0" top="48.0" /></padding>
+            <Label text="Soporte técnico">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Label>
+            <Label text="Sistema de clientes y solicitudes" />
+            <VBox spacing="12.0">
+                <Button defaultButton="true" maxWidth="Infinity" onAction="#abrirClientes" prefHeight="48.0" text="Clientes" />
+                <Button defaultButton="true" maxWidth="Infinity" onAction="#abrirSolicitudes" prefHeight="48.0" text="Solicitud de servicio" />
+                <Button defaultButton="true" maxWidth="Infinity" onAction="#salir" prefHeight="44.0" text="Salir" />
+            </VBox>
+        </VBox>
+    </center>
+    <padding><Insets bottom="45.0" left="45.0" right="45.0" top="45.0" /></padding>
+</BorderPane>
